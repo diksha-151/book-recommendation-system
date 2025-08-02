@@ -1,0 +1,2180 @@
+{
+  "name": "BookRecommendationChatBot-dialog",
+  "type": "dialog",
+  "valid": true,
+  "counts": {
+    "intents": 18,
+    "entities": 8,
+    "dialog_nodes": 24
+  },
+  "status": "Available",
+  "created": "2025-08-02T08:55:32.317Z",
+  "updated": "2025-08-02T08:55:32.317Z",
+  "language": "en",
+  "skill_id": "bbd38397-e15c-4c8e-8b10-22cf125d2ffc",
+  "snapshot": "1",
+  "workspace": {
+    "created": "2025-08-02T08:55:32.317Z",
+    "intents": [
+      {
+        "intent": "Bot_Control_Ignore_Undo",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Hold on! I think I want to do it differently.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Wait! Let's back up few steps and do that again",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Actually, I take that back",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Not yet",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Nothing",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I didn't mean to do that actually, let's go back",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I did not mean that?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I change my mind.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Cancel",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Ignore this",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "It's not what I mean",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Let us redo that again!",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Never mind",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Never",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": "Ask the bot to take one step back."
+      },
+      {
+        "intent": "thanks",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Thanks buddy",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Thank you",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Appreciate it",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Thanks a lot",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Thank you very much",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That helps",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "author_preference",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "I love books by Dan Brown",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Suggest me all books of Colleen Hoover",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Suggest a book by Agatha Christie.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Books by Nicholas Sparks.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Anything from J.K. Rowling?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "goodbye",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "See ya",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Bye",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Catch you soon",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Talk to you later",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Goodbye",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Tata",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Lets's talk later.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "Bot_Control_Start_Over",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "We will need to begin again",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I need to reset.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "How can I start over?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Can we please start over?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Begin over!",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Back to the top",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Back to the beginning",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Actually, let's start over",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I want start from the beginning",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "We need a do-over",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Start over",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Restart",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Please start a new chat",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Please reset",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Please initiate from the beginning",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "One more time from the beginning",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Let's pick this up from the top again.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Let's go back to square one",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Let us reopen this again.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I would like to start all over",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": "Restart bot or current flow."
+      },
+      {
+        "intent": "genre_question",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Do you have mystery books?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Recommend me some horror books.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I want something romantic.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "What genre do you recommend?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Suggest a fantasy novel.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "Bot_Control_Reject_Response",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "You didn't understand me",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "You're misunderstanding me",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "You did not understand what I said",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "You did not understand what I asked",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Wrong response",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That was wrong, try again",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That was not my intent",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That sounds like the wrong response",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That is not true",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That answer is incorrect",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Not the right response",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "No",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "No I'm fine thanks",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "It is not what I was looking for",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "It is not what I want",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I wasn't looking for that",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I don't want that",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I don't need that",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I do not think it is the answer?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I disagree",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Bad response",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": "Indicate the bot's response does not address a question."
+      },
+      {
+        "intent": "Bot_Control_Confirm_Presence",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Am I talking to someone?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "You around?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Where'd you go?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Speak to me if you are there.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Is anybody home?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Is anybody here?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I am still holding",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Have I lost you?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Did you hear what I said?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Did you go somewhere?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Are you there?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Are you still here with me?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Are you still around?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Are you on?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Are you leaving me?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Anyone there?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": "Ask the bot to indicate that it is available."
+      },
+      {
+        "intent": "Bot_Control_Standby",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Be back later",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Back again soon",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Be patient with me",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Can you give me a moment?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Can you wait for me?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Give me a few minutes to get together",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Give me a moment",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Give me a second",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Hold on",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I want stop a moment",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I will be back",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I would like to put you on hold",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "In a moment",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Just a sec",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Just hold on",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Keep holding",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Let me see",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Need a minute here",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Out for a break",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Wait",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": "Indicate a delay in providing input to the bot."
+      },
+      {
+        "intent": "mood_based_request",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Give me something relaxing to read.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I want something uplifting.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Suggest something tense.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I am in the mood for adventure.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I feel sad, suggest a book.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "confused",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Can't decide.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Help me pick a book.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I'm confused",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Any suggestions?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I don't know what to read.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "Bot_Control_Change_Subject",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "A different matter",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I have one more question",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Here is another issue",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Let us talk about something else",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Talk about something else",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Let us change the topic",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Discuss something else",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Chat about something else",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Change topic",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Can we talk about something else?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Another thing",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Help me with this other question",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": "Change to a different topic."
+      },
+      {
+        "intent": "book_recommend",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Can you recommend a book ?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Suggest me a novel.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Give me something interesting to read.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Any good books today?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Give me a book recommendation.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I need something good to read.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "Bot_Control_Approve_Response",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Indeed!",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "You read my mind",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Yes",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Yeah, that's it!",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Very well. Let's do it.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "This is alright",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That's exactly what I want",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That is what I need",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That is the proper response.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That is right",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "That is precisely what I was looking for",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Sweet",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Sure thing!",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I like that",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I agree",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Great",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Got it",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "For sure!",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Correct",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "All right",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Affirmative. That's what I'm looking for.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": "Acknowledge that the response satisfies a question."
+      },
+      {
+        "intent": "repeat",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Not that, something new?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Show me a different book.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Another one please.",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Give me one more",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Recommend something else",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "Bot_Control_Clarification",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "I don't understand what you're saying",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I don't understand",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I need more information",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Let's try to say that again more clearly, shall we?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "What are you referring to?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "What are you saying?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "What are you talking about?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "What do you mean by that?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "What do you mean?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I don't get it",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I didn't understand that properly",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I didn't quite understand what you said",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I did not quite understand what you gave me",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Explains",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Come again?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Can you say that again please?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I didn't catch that",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": "Repeat or clarify last statement."
+      },
+      {
+        "intent": "Bot_Control_Unsure",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "No clue",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "No idea",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "To be honest, I m really not sure",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I don t know what you need",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I m not sure what will make you happy",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I m not certain I get what you re saying",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I haven't got a clue",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I have no idea what you are looking for",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I have no idea, actually",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "You got me",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I don t know what you want",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "I m not yet convinced",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": "Indicate no definite answer to a question."
+      },
+      {
+        "intent": "greetings",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "examples": [
+          {
+            "text": "Good Morning",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Good Evening",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Hello",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Hi",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Good Afternoon",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Hey",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Hey Listen",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "What's up?",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          },
+          {
+            "text": "Namaste",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z"
+          }
+        ],
+        "description": ""
+      }
+    ],
+    "updated": "2025-08-02T08:55:32.317Z",
+    "entities": [
+      {
+        "entity": "mood",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "motivation",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "emotional",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "bored",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "inspired",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "adventure",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "excited",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "intense",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "happy",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "relaxed",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "stressed",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "sad",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "romantic",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-number",
+        "values": [],
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z"
+      },
+      {
+        "entity": "language",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "English",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Telugu",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Tamil",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Japanese",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "French",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Hindi",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Spanish",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Bengali",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "German",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "length",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "long",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "under 200 pages",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "over 500 pages",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "short",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "medium",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "author",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "Dan Brown",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Jane Austen",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "J.K. Rowling",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Chetan Bhagat",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Agatha Christie",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "George R.R. Martin",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Paulo Coelho",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Colleen Hoover",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Stephen King",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Nicholas Sparks",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-time",
+        "values": [],
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z"
+      },
+      {
+        "entity": "genre",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "romance",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "poetry",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "motivation",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "fantasy",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "self motivation",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "historical",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "thriller",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "self-help",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "biography",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "education",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "nonfiction",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "adventure",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "horror",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "fiction",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "sci-fi",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "mystery",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "young adult",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "time_period",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "post-apocalyptic",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "ancient",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "future",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "modern-day",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "20th century",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "medieval",
+            "created": "2025-08-02T08:55:35.027Z",
+            "updated": "2025-08-02T08:55:35.027Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "fuzzy_match": true
+      }
+    ],
+    "language": "en",
+    "metadata": {
+      "skill": {
+        "counts": {
+          "intents": 18,
+          "entities": 8,
+          "dialog_nodes": 24
+        }
+      },
+      "api_version": {
+        "major_version": "v2",
+        "minor_version": "2018-11-08"
+      },
+      "from-sample": true
+    },
+    "webhooks": [
+      {
+        "url": "https://781bdec0479a.ngrok-free.app/webhook",
+        "name": "main_webhook",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "Basic cGF0ZWxkaWtzaGE6RGlrc2hhQDMwMDcyMDA1"
+          }
+        ]
+      }
+    ],
+    "dialog_nodes": [
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_3_1754111520440",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "event_name": "focus",
+        "dialog_node": "handler_8_1754111520508",
+        "previous_sibling": "handler_4_1754111520508"
+      },
+      {
+        "type": "event_handler",
+        "parent": "slot_3_1754111520440",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "event_name": "input",
+        "dialog_node": "handler_4_1754111520508"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Here's a book for you: $recommendation.recommendation"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_5_1754109014844",
+        "actions": [
+          {
+            "name": "main_webhook",
+            "type": "webhook",
+            "parameters": {},
+            "result_variable": "recommendation"
+          }
+        ],
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "$recommendation",
+        "dialog_node": "response_2_1754110059065",
+        "previous_sibling": "slot_3_1754111520440"
+      },
+      {
+        "type": "response_condition",
+        "output": {},
+        "parent": "node_5_1754109014844",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "anything_else",
+        "dialog_node": "response_2_1754112615455",
+        "previous_sibling": "response_2_1754110059065"
+      },
+      {
+        "type": "response_condition",
+        "output": {},
+        "parent": "node_5_1754109014844",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "$recommendation",
+        "dialog_node": "response_10_1754114267795",
+        "previous_sibling": "response_2_1754112615455"
+      },
+      {
+        "type": "slot",
+        "parent": "node_5_1754109014844",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "dialog_node": "slot_3_1754111520440"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "I will help you."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "#confused",
+        "dialog_node": "node_9_1754060774740",
+        "previous_sibling": "node_6_1754060720057"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Your welcome."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "#thanks",
+        "dialog_node": "node_10_1754061689376",
+        "previous_sibling": "node_2_1754061592432"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "These books will be perfect for your mood."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "#mood_based_request",
+        "dialog_node": "node_3_1754060962028",
+        "previous_sibling": "node_8_1754060889888"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Here's what you requested"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "@mood",
+        "dialog_node": "node_2_1754062324517",
+        "previous_sibling": "node_2_1754062269980"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "What type of book you want to read?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "#book_recommend",
+        "dialog_node": "node_4_1754060637660",
+        "previous_sibling": "node_5_1754060082840"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "See you next time. Have a great day!"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "#goodbye",
+        "dialog_node": "node_8_1754060889888",
+        "previous_sibling": "node_2_1754060847749"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Here's what you requested"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "@length",
+        "dialog_node": "node_10_1754062233252",
+        "previous_sibling": "node_8_1754062182047"
+      },
+      {
+        "type": "standard",
+        "title": "Call webhook",
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "metadata": {
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "conditions": "#book_recommend",
+        "dialog_node": "node_5_1754109014844",
+        "previous_sibling": "Anything else"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Here are the books you wanted."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "#genre_question",
+        "dialog_node": "node_2_1754060847749",
+        "previous_sibling": "node_9_1754060774740"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Hello!"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "#greetings",
+        "dialog_node": "node_5_1754060082840",
+        "previous_sibling": "Welcome"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Here's another one."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "#repeat",
+        "dialog_node": "node_2_1754061592432",
+        "previous_sibling": "node_3_1754060962028"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Alright."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "@author",
+        "dialog_node": "node_1_1754061742322",
+        "previous_sibling": "node_10_1754061689376"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "This is suitable for your mood:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "@mood",
+        "dialog_node": "node_2_1754062269980",
+        "previous_sibling": "node_10_1754062233252"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Here is this genre books."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "@genre",
+        "dialog_node": "node_3_1754062127717",
+        "previous_sibling": "node_1_1754061742322"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Books in this language are:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "@language",
+        "dialog_node": "node_8_1754062182047",
+        "previous_sibling": "node_3_1754062127717"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "These are the books you wanted:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "#author_preference",
+        "dialog_node": "node_6_1754060720057",
+        "previous_sibling": "node_4_1754060637660"
+      },
+      {
+        "type": "standard",
+        "title": "Anything else",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "I didn't understand. You can try rephrasing."
+                },
+                {
+                  "text": "Can you reword your statement? I'm not understanding."
+                },
+                {
+                  "text": "I didn't get your meaning."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "anything_else",
+        "dialog_node": "Anything else",
+        "previous_sibling": "node_2_1754062324517",
+        "disambiguation_opt_out": true
+      },
+      {
+        "type": "standard",
+        "title": "Welcome",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Hello. How can I help you?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2025-08-02T08:55:35.027Z",
+        "updated": "2025-08-02T08:55:35.027Z",
+        "conditions": "welcome",
+        "dialog_node": "Welcome"
+      }
+    ],
+    "counterexamples": [],
+    "system_settings": {
+      "nlp": {
+        "model": "latest"
+      },
+      "disambiguation": {
+        "enabled": false,
+        "randomize": true,
+        "suggestion_text_policy": "title",
+        "none_of_the_above_prompt": "None of the above."
+      },
+      "spelling_auto_correct": false
+    },
+    "learning_opt_out": false
+  },
+  "description": "",
+  "assistant_id": "fe8a8ee0-9b38-4c08-bdb3-85d6e06593fd",
+  "dialog_settings": {
+    "source_assistant": "3a90b455-a483-4745-bcad-2a8d054cafef"
+  },
+  "assistant_references": [
+    {
+      "name": "BookRecommendationChatBot",
+      "assistant_id": "3a90b455-a483-4745-bcad-2a8d054cafef",
+      "skill_reference": "main skill"
+    }
+  ]
+}
