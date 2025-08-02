@@ -64,7 +64,9 @@ Display the response in the chatbot output using <?webhook_result?>
 📦 requirements.txt
 
 flask
+
 pandas
 
 Created by [Diksha Patel]
+
 For educational purposes — Book Recommender using Watsonx + Python
