@@ -1,4 +1,4 @@
-# 📚 Book Recommendation Webhook using Flask + IBM Watsonx Assistant
+# 📚 Book Recommendation System: Webhook using Flask + IBM Watsonx Assistant
 
 This project is a **Flask-based webhook** designed to integrate with **IBM Watsonx Assistant**. It helps build a conversational **book recommendation system** that suggests books based on user preferences like **genre** or **mood**.
 
