@@ -66,5 +66,5 @@ Display the response in the chatbot output using <?webhook_result?>
 flask
 pandas
 
-Created by [Your Name]
+Created by [Diksha Patel]
 For educational purposes — Book Recommender using Watsonx + Python
